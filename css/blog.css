@@ -192,3 +192,48 @@
   .newsletter__form { width: 100%; }
   .newsletter__form input { flex: 1; min-width: 0; }
 }
+
+/* ── BLOG FİLTRE ─────────────────────────────────── */
+.blog-filter {
+  background: var(--cream);
+  padding: 36px 0;
+  border-bottom: 1px solid var(--stone-lt);
+}
+.blog-filter__grid {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.blog-filter__btn {
+  padding: 11px 22px;
+  border-radius: 100px;
+  border: 1.5px solid var(--stone-lt);
+  background: var(--white);
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--ink-60);
+  cursor: pointer;
+  transition: all .25s;
+}
+.blog-filter__btn:hover {
+  border-color: var(--earth-mid);
+  color: var(--earth);
+}
+.blog-filter__btn.active {
+  background: var(--earth);
+  border-color: var(--earth);
+  color: var(--white);
+}
+.blog-card.hidden { display: none; }
+
+@media(max-width: 600px) {
+  .blog-filter__grid {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: flex-start;
+    padding-bottom: 4px;
+  }
+  .blog-filter__btn { flex-shrink: 0; }
+}
