@@ -261,3 +261,71 @@
 @media(max-width:768px){
   .comp__grid { grid-template-columns: 1fr; }
 }
+
+/* ── NEDEN BİZ? ──────────────────────────────────── */
+.why-us {
+  padding: 120px 0;
+  background: var(--ink);
+}
+.why-us .section-header {
+  max-width: 800px;
+  margin-bottom: 64px;
+}
+.why-us .section-title {
+  color: var(--white);
+  font-size: clamp(26px, 2.6vw, 36px);
+  line-height: 1.35;
+}
+.why-us__intro {
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 1.7;
+  color: rgba(255,255,255,.6);
+}
+.why-us__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.why-us__card {
+  background: rgba(255,255,255,.04);
+  border: 1px solid rgba(255,255,255,.1);
+  border-radius: var(--radius-lg);
+  padding: 36px 32px;
+  transition: transform .3s var(--ease-out), background .3s, border-color .3s;
+}
+.why-us__card:hover {
+  transform: translateY(-6px);
+  background: rgba(255,255,255,.07);
+  border-color: var(--earth-mid);
+}
+.why-us__num {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--gold);
+  margin-bottom: 20px;
+  opacity: .8;
+}
+.why-us__card h3 {
+  font-family: var(--font-display);
+  font-size: 19px;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 12px;
+  line-height: 1.3;
+}
+.why-us__card p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: rgba(255,255,255,.55);
+}
+
+@media(max-width: 900px) {
+  .why-us__grid { grid-template-columns: 1fr 1fr; }
+}
+@media(max-width: 600px) {
+  .why-us__grid { grid-template-columns: 1fr; }
+  .why-us { padding: 80px 0; }
+}
