@@ -1,0 +1,168 @@
+/* ════════════════════════════════════════════════
+   CONTACT.HTML — İletişim Sayfası Stilleri
+════════════════════════════════════════════════ */
+
+.about-hero--short {
+  height: 50vh;
+  min-height: 400px;
+}
+
+/* ── ANA GRID ────────────────────────────────────── */
+.contact-main {
+  padding: 100px 0;
+  background: var(--white);
+}
+.contact-main__grid {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 64px;
+}
+
+/* ── SOL: BİLGİ KARTLARI ─────────────────────────── */
+.contact-info__desc {
+  font-size: 15px;
+  line-height: 1.8;
+  color: var(--ink-60);
+  margin: 24px 0 40px;
+}
+.contact-card {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  padding: 24px 0;
+  border-bottom: 1px solid var(--stone-lt);
+}
+.contact-card:last-child { border-bottom: none; }
+.contact-card__icon {
+  flex-shrink: 0;
+  width: 48px; height: 48px;
+  background: rgba(58,92,53,.08);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--earth);
+}
+.contact-card__icon svg { width: 22px; height: 22px; }
+.contact-card h4 {
+  font-family: var(--font-display);
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 6px;
+}
+.contact-card p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--ink-60);
+}
+.contact-card a {
+  color: var(--earth);
+  font-weight: 600;
+  transition: opacity .2s;
+}
+.contact-card a:hover { opacity: .7; }
+.contact-card__note {
+  font-size: 12px;
+  color: var(--ink-30);
+}
+
+/* ── SAĞ: FORM KARTI ─────────────────────────────── */
+.contact-form-card {
+  background: var(--cream);
+  border-radius: var(--radius-lg);
+  padding: 48px;
+  position: relative;
+}
+.contact-form-card h3 {
+  font-family: var(--font-display);
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 8px;
+}
+.contact-form-card > p {
+  font-size: 14px;
+  color: var(--ink-60);
+  margin-bottom: 32px;
+}
+.contact-form__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+.contact-form__field {
+  margin-bottom: 20px;
+}
+.contact-form__field label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 8px;
+}
+.contact-form__field input,
+.contact-form__field select,
+.contact-form__field textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid var(--stone-lt);
+  border-radius: 10px;
+  background: var(--white);
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--ink);
+  transition: border-color .2s, box-shadow .2s;
+}
+.contact-form__field input:focus,
+.contact-form__field select:focus,
+.contact-form__field textarea:focus {
+  outline: none;
+  border-color: var(--earth-mid);
+  box-shadow: 0 0 0 3px rgba(90,143,82,.12);
+}
+.contact-form__field textarea { resize: vertical; min-height: 110px; }
+.contact-form__submit {
+  width: 100%;
+  justify-content: center;
+  margin-top: 8px;
+}
+.contact-form__success {
+  display: none;
+  text-align: center;
+  padding: 40px 20px;
+}
+.contact-form__success.show { display: block; }
+.contact-form__success svg {
+  color: var(--earth);
+  margin-bottom: 16px;
+}
+.contact-form__success h4 {
+  font-family: var(--font-display);
+  font-size: 22px;
+  color: var(--ink);
+  margin-bottom: 8px;
+}
+.contact-form__success p {
+  font-size: 14px;
+  color: var(--ink-60);
+}
+.contact-form.hide { display: none; }
+
+@media(max-width: 900px) {
+  .contact-main__grid { grid-template-columns: 1fr; gap: 48px; }
+  .contact-form-card { padding: 32px 24px; }
+  .contact-form__row { grid-template-columns: 1fr; }
+}
+
+/* ── HARİTA ──────────────────────────────────────── */
+.contact-map {
+  height: 420px;
+  width: 100%;
+}
+.contact-map iframe {
+  width: 100%;
+  height: 100%;
+  display: block;
+  filter: saturate(0.9);
+}
