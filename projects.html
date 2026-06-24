@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projelerimiz — USUL Mühendislik</title>
+  <meta name="description" content="USUL Mühendislik tarafından yürütülen toprak etüdü, CBS, mera ıslahı, bahçe kurulumu ve GES yer seçimi projeleri.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/about.css">
+  <link rel="stylesheet" href="css/projects.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav scrolled" id="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">
+        <img src="images/usul-logo.png" alt="USUL Mühendislik" class="nav__logo-img">
+      </a>
+      <div class="nav__links">
+        <a href="index.html" class="nav__link">Ana Sayfa</a>
+        <a href="about.html" class="nav__link">Hakkımızda</a>
+        <a href="service.html" class="nav__link">Hizmetler</a>
+        <a href="projects.html" class="nav__link active">Projeler</a>
+        <a href="blog.html" class="nav__link">Blog</a>
+        <a href="contact.html" class="nav__link">İletişim</a>
+      </div>
+      <a href="contact.html" class="nav__cta">Teklif Al</a>
+      <button class="nav__burger" id="navBurger"><span></span><span></span><span></span></button>
+    </div>
+    <div class="nav__mobile" id="navMobile">
+      <a href="index.html" class="nav__mobile-link">Ana Sayfa</a>
+      <a href="about.html" class="nav__mobile-link">Hakkımızda</a>
+      <a href="service.html" class="nav__mobile-link">Hizmetler</a>
+      <a href="projects.html" class="nav__mobile-link">Projeler</a>
+      <a href="blog.html" class="nav__mobile-link">Blog</a>
+      <a href="contact.html" class="nav__mobile-link">İletişim</a>
+      <a href="contact.html" class="nav__mobile-cta">Teklif Al →</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="about-hero about-hero--short">
+    <div class="about-hero__bg">
+      <img src="images/banner3.jpg" alt="Projelerimiz">
+      <div class="about-hero__overlay"></div>
+    </div>
+    <div class="container about-hero__content">
+      <p class="about-hero__eyebrow">Projelerimiz</p>
+      <h1 class="about-hero__title">Sahada Ürettiğimiz<br><em>Bilimsel Değer</em></h1>
+      <p class="about-hero__desc">Toprak etüdünden enerji yatırımlarına, mera ıslahından bahçe kurulumuna kadar geniş bir yelpazede yürüttüğümüz proje türleri.</p>
+    </div>
+  </section>
+
+  <!-- FİLTRE -->
+  <section class="projects-filter">
+    <div class="container">
+      <div class="projects-filter__grid">
+        <button class="projects-filter__btn active" data-filter="all">Tümü</button>
+        <button class="projects-filter__btn" data-filter="toprak">Toprak & CBS</button>
+        <button class="projects-filter__btn" data-filter="tarim">Tarımsal Projeler</button>
+        <button class="projects-filter__btn" data-filter="enerji">Enerji & Altyapı</button>
+        <button class="projects-filter__btn" data-filter="mevzuat">Mevzuat & Danışmanlık</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJE GRID -->
+  <section class="projects-grid-section">
+    <div class="container">
+      <div class="projects-grid">
+
+        <div class="project-card" data-category="toprak">
+          <div class="project-card__img">
+            <img src="images/Etut.png" alt="Toprak Etüt ve Haritalama" loading="lazy">
+            <span class="project-card__tag">Toprak & CBS</span>
+          </div>
+          <div class="project-card__body">
+            <h3>Aydın Toprak Etüt Projesi</h3>
+            <p>Bölgesel ölçekte toprak profil analizi, sınıflandırma ve CBS tabanlı haritalama çalışması.</p>
+            <a href="service.html#toprak-etut" class="project-card__link">Hizmeti İncele →</a>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="toprak">
+          <div class="project-card__img">
+            <img src="images/CBS.jpg" alt="CBS Mekânsal Analiz" loading="lazy">
+            <span class="project-card__tag">Toprak & CBS</span>
+          </div>
+          <div class="project-card__body">
+            <h3>Mekânsal Veri Tabanı Projesi</h3>
+            <p>Çok katmanlı uydu ve saha verilerinin entegre edildiği karar destek sistemi geliştirme çalışması.</p>
+            <a href="service.html#cbs" class="project-card__link">Hizmeti İncele →</a>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="tarim">
+          <div class="project-card__img">
+            <img src="images/service3.jpg" alt="Bitki Besleme Programı" loading="lazy">
+            <span class="project-card__tag">Tarımsal Proje</span>
+          </div>
+          <div class="project-card__body">
+            <h3>Bölgesel Gübreleme Programı</h3>
+            <p>Çok parsellik tarım arazisinde toprak ve bitki analizine dayalı özel gübreleme planı uygulaması.</p>
+            <a href="service.html#bitki" class="project-card__link">Hizmeti İncele →</a>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="tarim">
+          <div class="project-card__img">
+            <img src="images/banner2.jpg" alt="Mera Islah Projesi" loading="lazy">
+            <span class="project-card__tag">Tarımsal Proje</span>
+          </div>
+          <div class="project-card__body">
+            <h3>Mera Rehabilitasyon Çalışması</h3>
+            <p>Otlatma baskısı altındaki mera alanının vejetasyon analizleri ile ıslah ve rehabilitasyon projesi.</p>
+            <a href="service.html#mera" class="project-card__link">Hizmeti İncele →</a>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="tarim">
+          <div class="project-card__img">
+            <img src="images/about_img1.jpg" alt="Bahçe Kurulumu Fizibilitesi" loading="lazy">
+            <span class="project-card__tag">Tarımsal Proje</span>
+          </div>
+          <div class="project-card__body">
+            <h3>Meyve Bahçesi Fizibilite Raporu</h3>
+            <p>Yeni yatırım alanı için iklim, toprak ve sulama suyu analizine dayalı teknik-ekonomik fizibilite çalışması.</p>
+            <a href="service.html#bahce" class="project-card__link">Hizmeti İncele →</a>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="toprak">
+          <div class="project-card__img">
+            <img src="images/banner.jpg" alt="Toprak Koruma Projesi" loading="lazy">
+            <span class="project-card__tag">Toprak & CBS</span>
+          </div>
+          <div class="project-card__body">
+            <h3>Erozyon Risk Değerlendirme Projesi</h3>
+            <p>Yüksek eğimli arazide erozyon riski analizi ve toprak koruma stratejilerinin geliştirilmesi.</p>
+            <a href="service.html#toprak-koruma" class="project-card__link">Hizmeti İncele →</a>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="enerji">
+          <div class="project-card__img">
+            <img src="images/banner3.jpg" alt="GES Yer Seçimi" loading="lazy">
+            <span class="project-card__tag">Enerji & Altyapı</span>
+          </div>
+          <div class="project-card__body">
+            <h3>GES Saha Uygunluk Analizi</h3>
+            <p>Güneş enerji santrali yatırımı için topografik, çevresel ve teknik kriterlere dayalı yer seçimi çalışması.</p>
+            <a href="service.html#ges" class="project-card__link">Hizmeti İncele →</a>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="enerji">
+          <div class="project-card__img">
+            <img src="images/harita.jpg" alt="Arazi Haritalama" loading="lazy">
+            <span class="project-card__tag">Enerji & Altyapı</span>
+          </div>
+          <div class="project-card__body">
+            <h3>Enerji Nakil Hattı Arazi Analizi</h3>
+            <p>Altyapı projesi kapsamında arazi kullanım durumu ve mesafe analizlerinin gerçekleştirilmesi.</p>
+            <a href="service.html#arazi" class="project-card__link">Hizmeti İncele →</a>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="mevzuat">
+          <div class="project-card__img">
+            <img src="images/Muhendislik.jpg" alt="5403 Sayılı Kanun Teknik Destek" loading="lazy">
+            <span class="project-card__tag">Mevzuat & Danışmanlık</span>
+          </div>
+          <div class="project-card__body">
+            <h3>Tarım Dışı Kullanım Teknik Raporu</h3>
+            <p>5403 Sayılı Kanun kapsamında arazi kullanım değişikliği için hazırlanan teknik değerlendirme raporu.</p>
+            <a href="service.html#kanun" class="project-card__link">Hizmeti İncele →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-band">
+    <div class="container cta-band__inner">
+      <div class="cta-band__text">
+        <h2>Sıradaki Proje Sizinki Olsun</h2>
+        <p>Projeniz için ücretsiz ön değerlendirme talep edin.</p>
+      </div>
+      <div class="cta-band__actions">
+        <a href="contact.html" class="btn btn--primary btn--lg">Bize Ulaşın</a>
+        <a href="service.html" class="btn btn--ghost btn--lg">Hizmetlerimiz →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="index.html" class="footer__logo">
+          <img src="images/usul-logo.png" alt="USUL Mühendislik" class="footer__logo-img">
+        </a>
+        <p class="footer__tagline">Toprağın dilini çözüyoruz.<br>Bilimle, deneyimle, sorumlulukla.</p>
+        <div class="footer__socials">
+          <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+        </div>
+      </div>
+      <div class="footer__nav">
+        <div class="footer__col">
+          <h5>Hizmetler</h5>
+          <a href="service.html#cbs">CBS Çözümleri</a>
+          <a href="service.html#toprak-etut">Toprak Etüt & Haritalama</a>
+          <a href="service.html#arazi">Arazi Çalışmaları</a>
+          <a href="service.html#bitki">Bitki Besleme & Koruma</a>
+        </div>
+        <div class="footer__col">
+          <h5>Firma</h5>
+          <a href="about.html">Hakkımızda</a>
+          <a href="projects.html">Projeler</a>
+          <a href="blog.html">Blog</a>
+          <a href="contact.html">İletişim</a>
+        </div>
+        <div class="footer__col">
+          <h5>İletişim</h5>
+          <p>Aşağı Öveçler Mah.<br>1322. Cadde No: 13/8<br>Çankaya / Ankara</p>
+          <a href="mailto:iletisim@usulmuhendislik.com.tr">iletisim@usulmuhendislik.com.tr</a>
+          <a href="tel:+905306939986">+90 530 693 99 86</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <span>© 2025 USUL Mühendislik Ticaret Ltd. Şti. — Tüm Hakları Saklıdır.</span>
+        <span>Tic. Sic. No: 526466 · Mersis: 0896104295400001</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/about.js"></script>
+  <script src="js/projects.js"></script>
+</body>
+</html>
