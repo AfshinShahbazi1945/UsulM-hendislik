@@ -64,12 +64,26 @@
         </div>
         <div class="blog-featured__body">
           <span class="blog-featured__badge">Öne Çıkan</span>
-          <span class="blog-card__date">12 Haziran 2026 · CBS</span>
-          <h2>Coğrafi Bilgi Sistemleri ile Tarımsal Karar Süreçlerinin Dönüşümü</h2>
-          <p>Mekânsal verinin doğru analiz edilmesi, modern tarımsal planlamanın temel taşlarından biri haline geldi. Bu yazıda CBS teknolojilerinin tarımsal karar süreçlerine kazandırdığı değeri inceliyoruz.</p>
+          <span class="blog-card__date">18 Haziran 2026 · CBS & Teknoloji</span>
+          <h2>Coğrafi Bilgi Sistemleri ile Arazi Yönetiminde Karar Süreçlerinin Dönüşümü</h2>
+          <p>Mekânsal verinin doğru analiz edilmesi, modern arazi yönetiminin ve tarımsal planlamanın temel taşlarından biri haline geldi. Bu yazıda CBS teknolojilerinin, uydu görüntülerinin ve uzaktan algılama verilerinin karar destek süreçlerine kazandırdığı bilimsel değeri; saha örnekleriyle birlikte inceliyoruz.</p>
           <span class="blog-featured__readmore">Makaleyi Oku →</span>
         </div>
       </a>
+    </div>
+  </section>
+
+  <!-- KATEGORİ FİLTRE -->
+  <section class="blog-filter">
+    <div class="container">
+      <div class="blog-filter__grid">
+        <button class="blog-filter__btn active" data-filter="all">Tümü</button>
+        <button class="blog-filter__btn" data-filter="cbs">CBS & Teknoloji</button>
+        <button class="blog-filter__btn" data-filter="toprak">Toprak Bilimi</button>
+        <button class="blog-filter__btn" data-filter="tarim">Tarım</button>
+        <button class="blog-filter__btn" data-filter="enerji">Enerji</button>
+        <button class="blog-filter__btn" data-filter="mevzuat">Mevzuat</button>
+      </div>
     </div>
   </section>
 
@@ -83,74 +97,110 @@
 
       <div class="blog-grid">
 
-        <a href="#" class="blog-card">
+        <a href="#" class="blog-card" data-category="toprak">
           <div class="blog-card__img">
             <img src="images/blog2.jpg" alt="Toprak Etüdü Yazısı" loading="lazy">
           </div>
           <div class="blog-card__body">
-            <span class="blog-card__date">28 Mayıs 2026 · Toprak Bilimi</span>
-            <h3>Toprak Profili Nedir? Sınıflandırma Esasları</h3>
-            <p>Toprak profilinin katmanları, sınıflandırma sistemleri ve arazi kullanım kararlarına etkisi üzerine kapsamlı bir inceleme.</p>
+            <span class="blog-card__date">5 Haziran 2026 · Toprak Bilimi</span>
+            <h3>Toprak Profili Nedir? Sınıflandırma Esasları ve Arazi Kullanımına Etkisi</h3>
+            <p>Toprak profilinin katmanları, ulusal sınıflandırma sistemleri ve bu verilerin arazi kullanım kararlarına nasıl yön verdiği üzerine kapsamlı bir teknik inceleme.</p>
             <span class="blog-card__readmore">Devamını Oku →</span>
           </div>
         </a>
 
-        <a href="#" class="blog-card">
+        <a href="#" class="blog-card" data-category="tarim">
           <div class="blog-card__img">
             <img src="images/blog3.jpg" alt="Mera Islahı Yazısı" loading="lazy">
           </div>
           <div class="blog-card__body">
-            <span class="blog-card__date">14 Mayıs 2026 · Tarım</span>
+            <span class="blog-card__date">28 Mayıs 2026 · Tarım</span>
             <h3>Sürdürülebilir Mera Yönetiminin 5 Temel İlkesi</h3>
-            <p>Otlatma kapasitesinden vejetasyon analizine, mera ekosistemlerinin korunması için bilimsel yaklaşımlar.</p>
+            <p>Otlatma kapasitesi hesaplamasından vejetasyon analizine; bozulan mera ekosistemlerinin bilimsel yöntemlerle yeniden üretken hale getirilmesi.</p>
             <span class="blog-card__readmore">Devamını Oku →</span>
           </div>
         </a>
 
-        <a href="#" class="blog-card">
+        <a href="#" class="blog-card" data-category="cbs">
           <div class="blog-card__img">
-            <img src="images/service1.jpg" alt="Erozyon Yazısı" loading="lazy">
+            <img src="images/service1.jpg" alt="Erozyon Risk Analizi Yazısı" loading="lazy">
           </div>
           <div class="blog-card__body">
-            <span class="blog-card__date">2 Mayıs 2026 · Çevre</span>
-            <h3>Erozyon Risk Analizinde Uzaktan Algılamanın Rolü</h3>
-            <p>Uydu görüntüleri ve sayısal yükseklik modelleri kullanılarak erozyon riskinin önceden tespit edilmesi.</p>
+            <span class="blog-card__date">14 Mayıs 2026 · CBS & Teknoloji</span>
+            <h3>Erozyon Risk Analizinde Uzaktan Algılama ve CBS'nin Rolü</h3>
+            <p>Uydu görüntüleri ve sayısal yükseklik modelleri kullanılarak erozyon riskinin sahaya çıkmadan önce nasıl tespit edilebileceğini inceliyoruz.</p>
             <span class="blog-card__readmore">Devamını Oku →</span>
           </div>
         </a>
 
-        <a href="#" class="blog-card">
+        <a href="#" class="blog-card" data-category="enerji">
           <div class="blog-card__img">
-            <img src="images/about_img.jpg" alt="GES Yazısı" loading="lazy">
+            <img src="images/Hizmet8.jpg" alt="GES Yazısı" loading="lazy">
           </div>
           <div class="blog-card__body">
-            <span class="blog-card__date">19 Nisan 2026 · Enerji</span>
-            <h3>Güneş Enerji Santrali Yatırımlarında Doğru Saha Seçimi</h3>
-            <p>GES projelerinde teknik, çevresel ve ekonomik kriterlerin bütünleşik değerlendirilmesinin önemi.</p>
+            <span class="blog-card__date">30 Nisan 2026 · Enerji</span>
+            <h3>Güneş Enerji Santrali Yatırımlarında Doğru Saha Seçiminin Önemi</h3>
+            <p>GES projelerinde güneşlenme potansiyeli, topografya, arazi kullanım durumu ve enerji nakil hattı mesafesinin bütünleşik değerlendirilmesi.</p>
             <span class="blog-card__readmore">Devamını Oku →</span>
           </div>
         </a>
 
-        <a href="#" class="blog-card">
+        <a href="#" class="blog-card" data-category="tarim">
           <div class="blog-card__img">
             <img src="images/news1.jpg" alt="Bahçe Kurulumu Yazısı" loading="lazy">
           </div>
           <div class="blog-card__body">
-            <span class="blog-card__date">3 Nisan 2026 · Yatırım</span>
-            <h3>Meyve Bahçesi Kurmadan Önce Bilmeniz Gereken 7 Şey</h3>
-            <p>İklim uyumluluğu, toprak analizi ve sulama planlaması; başarılı bir bahçe yatırımının olmazsa olmazları.</p>
+            <span class="blog-card__date">17 Nisan 2026 · Tarım</span>
+            <h3>Meyve Bahçesi Kurmadan Önce Bilmeniz Gereken 7 Kritik Faktör</h3>
+            <p>İklim uyumluluğu, toprak analizi, sulama suyu kaynağı ve fizibilite raporlaması; başarılı bir bahçe yatırımının olmazsa olmaz adımları.</p>
             <span class="blog-card__readmore">Devamını Oku →</span>
           </div>
         </a>
 
-        <a href="#" class="blog-card">
+        <a href="#" class="blog-card" data-category="mevzuat">
           <div class="blog-card__img">
-            <img src="images/service2.jpg" alt="5403 Sayılı Kanun Yazısı" loading="lazy">
+            <img src="images/Hizmrt9.jpg" alt="5403 Sayılı Kanun Yazısı" loading="lazy">
           </div>
           <div class="blog-card__body">
-            <span class="blog-card__date">21 Mart 2026 · Mevzuat</span>
-            <h3>5403 Sayılı Kanun: Tarım Arazilerinde Neler Değişti?</h3>
-            <p>Toprak Koruma ve Arazi Kullanımı Kanunu kapsamında yatırımcıların bilmesi gereken teknik gereklilikler.</p>
+            <span class="blog-card__date">3 Nisan 2026 · Mevzuat</span>
+            <h3>5403 Sayılı Kanun Kapsamında Tarım Arazilerinde Neler Değişiyor?</h3>
+            <p>Toprak Koruma ve Arazi Kullanımı Kanunu kapsamında tarım dışı kullanım süreçlerinde yatırımcıların bilmesi gereken teknik gereklilikler.</p>
+            <span class="blog-card__readmore">Devamını Oku →</span>
+          </div>
+        </a>
+
+        <a href="#" class="blog-card" data-category="toprak">
+          <div class="blog-card__img">
+            <img src="images/banner.jpg" alt="Toprak Koruma Yazısı" loading="lazy">
+          </div>
+          <div class="blog-card__body">
+            <span class="blog-card__date">22 Mart 2026 · Toprak Bilimi</span>
+            <h3>Toprak Koruma Projelerinde Arazi Kullanım Kabiliyeti Nasıl Belirlenir?</h3>
+            <p>Fiziksel, kimyasal ve biyolojik analizlerin bütünleştirildiği arazi kullanım kabiliyeti sınıflandırması ve sürdürülebilir koruma stratejileri.</p>
+            <span class="blog-card__readmore">Devamını Oku →</span>
+          </div>
+        </a>
+
+        <a href="#" class="blog-card" data-category="cbs">
+          <div class="blog-card__img">
+            <img src="images/about_img.jpg" alt="Arazi Çalışmaları Yazısı" loading="lazy">
+          </div>
+          <div class="blog-card__body">
+            <span class="blog-card__date">9 Mart 2026 · CBS & Teknoloji</span>
+            <h3>GPS/GNSS Tabanlı Saha Veri Toplamanın Proje Doğruluğuna Katkısı</h3>
+            <p>Sahada elde edilen hassas konum verilerinin CBS sistemlerine entegrasyonu ve karar destek mekanizmalarına dönüştürülme süreci.</p>
+            <span class="blog-card__readmore">Devamını Oku →</span>
+          </div>
+        </a>
+
+        <a href="#" class="blog-card" data-category="tarim">
+          <div class="blog-card__img">
+            <img src="images/service3.jpg" alt="Bitki Besleme Yazısı" loading="lazy">
+          </div>
+          <div class="blog-card__body">
+            <span class="blog-card__date">24 Şubat 2026 · Tarım</span>
+            <h3>Doğru Gübreleme Programı İçin Toprak ve Bitki Analizi Neden Şart?</h3>
+            <p>Besin elementi eksikliklerinin doğru teşhisi ve ürüne özel gübreleme programlarının hem verimi hem toprak sağlığını nasıl koruduğu.</p>
             <span class="blog-card__readmore">Devamını Oku →</span>
           </div>
         </a>
